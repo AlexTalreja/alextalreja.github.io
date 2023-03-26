@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkoutAppHooHacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ani-H4-7bL">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to exercise today?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9o-6y-c9S">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="85.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhp-mE-be4">
+                                        <rect key="frame" x="0.0" y="135.66666666666666" width="390" height="85.333333333333343"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Arms"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRv-ap-Bpt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVS-Dm-sO5">
+                                        <rect key="frame" x="0.0" y="271" width="390" height="85.666666666666686"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Chest"/>
+                                        <connections>
+                                            <action selector="chestTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Idi-FQ-rYh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdA-mj-FSY">
+                                        <rect key="frame" x="0.0" y="406.66666666666669" width="390" height="85.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uX9-Vj-y4Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaz-gR-8rw">
+                                        <rect key="frame" x="0.0" y="542" width="390" height="85.666666666666629"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Legs"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Legs"/>
+                                        <connections>
+                                            <action selector="legsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtu-MO-nTN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzI-m6-Qrt">
+                                        <rect key="frame" x="0.0" y="677.66666666666663" width="390" height="85.333333333333371"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="qia-fs-aHs"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Generate Workout!"/>
+                                        <connections>
+                                            <action selector="generateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snd-PM-TFR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XzI-m6-Qrt" firstAttribute="centerX" secondItem="ani-H4-7bL" secondAttribute="centerX" id="Nri-sB-Z5h"/>
+                                    <constraint firstAttribute="width" constant="390" id="fHM-GZ-KFE"/>
+                                    <constraint firstItem="w9o-6y-c9S" firstAttribute="centerX" secondItem="ani-H4-7bL" secondAttribute="centerX" id="kkN-r4-lp9"/>
+                                    <constraint firstAttribute="height" constant="763" id="pnb-Kv-LFs"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-X7-fO3">
+                                <rect key="frame" x="160" y="404.66666666666669" width="70" height="35"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoN-wH-HiI">
+                                <rect key="frame" x="0.0" y="725.66666666666663" width="390" height="34.333333333333371"/>
+                                <color key="tintColor" red="0.054901960784313725" green="0.36862745098039218" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQ3-cN-bpV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.87058823529411766" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BoN-wH-HiI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6sw-G5-0oB"/>
+                            <constraint firstItem="BoN-wH-HiI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H3G-RI-47Q"/>
+                            <constraint firstItem="ani-H4-7bL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HTe-VF-rMT"/>
+                            <constraint firstItem="9a3-X7-fO3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WPd-wQ-7Le"/>
+                            <constraint firstItem="ani-H4-7bL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ye2-0s-YvX"/>
+                            <constraint firstItem="9a3-X7-fO3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aAh-Tc-h5f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BoN-wH-HiI" secondAttribute="trailing" id="bNG-nu-Np6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ani-H4-7bL" secondAttribute="trailing" id="mtQ-jb-xSJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ani-H4-7bL" secondAttribute="bottom" id="vWo-Ma-U0r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BoN-wH-HiI" secondAttribute="bottom" constant="50" id="wbG-SA-JcE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ArmsButton" destination="lhp-mE-be4" id="g0O-rk-W2A"/>
+                        <outlet property="BackButton" destination="PdA-mj-FSY" id="wzJ-xf-3Ys"/>
+                        <outlet property="ChestButton" destination="sVS-Dm-sO5" id="94m-nX-FBN"/>
+                        <outlet property="LegsButton" destination="Iaz-gR-8rw" id="6VM-hO-KIr"/>
+                        <outlet property="generateButton" destination="XzI-m6-Qrt" id="jUX-6N-wJ4"/>
+                        <outlet property="label1" destination="9a3-X7-fO3" id="lQh-Qd-EMT"/>
+                        <outlet property="resetButton" destination="BoN-wH-HiI" id="a8g-lV-u7E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="4"/>
+        </scene>
+    </scenes>
+</document>
